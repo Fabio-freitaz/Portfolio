@@ -1,0 +1,104 @@
+
+.contact-form-container {
+    background-image: url('https://wallpaperaccess.com/full/796855.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 50px 20px;
+    color: #fff;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .contact-form {
+    background: rgba(0, 0, 0, 0.7); 
+    padding: 30px;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 500px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  }
+  
+  .contact-form h2 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #ffd700;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+    text-align: left;
+  }
+  
+  .form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    margin-top: 5px;
+  }
+  
+  .form-group input:focus,
+  .form-group textarea:focus {
+    outline: none;
+    border-color: red;
+    box-shadow: 0 0 5px red;
+  }
+  
+  textarea {
+    resize: none;
+    height: 100px;
+  }
+  
+  .submit-button {
+    background-color: blue;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .submit-button:hover {
+    background-color: #1c1c1c;
+  }
+  
+  .success-message {
+    color: #4caf50;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+  }
+  
+  .error-message {
+    color: #ff3333;
+    font-size: 1rem;
+    margin-bottom: 15px;
+  }
+  
+  
+  @media (max-width: 768px) {
+    .contact-form {
+      padding: 20px;
+    }
+  
+    .contact-form h2 {
+      font-size: 1.8rem;
+    }
+  
+    .submit-button {
+      width: 100%;
+    }
+  }

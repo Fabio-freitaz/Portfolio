@@ -1,0 +1,120 @@
+
+.home-container {
+    background-image: url('https://th.bing.com/th/id/OIP.V1lnN9nst_tIzmeWnhc-bwHaEK?rs=1&pid=ImgDetMain');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #fff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .home-container h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: ;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    animation: fadeIn 2s ease-in-out;
+  }
+  
+  .home-container p {
+    font-size: 1.5rem;
+    line-height: 1.8;
+    max-width: 600px;
+    margin-bottom: 30px;
+    color: #fff;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.6);
+    animation: slideUp 2s ease-in-out;
+  }
+  
+  .home-container img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid #000090;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+    animation: bounce 2s infinite;
+  }
+  
+  .home-container .btn-container {
+    display: flex;
+    gap: 15px;
+    animation: fadeIn 2.5s ease-in-out;
+  }
+  
+  .home-container a {
+    background-color: blue;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .home-container a:hover {
+    background-color: #1c1c1c;
+    transform: scale(1.1);
+  }
+  
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideUp {
+    from {
+      transform: translateY(20px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+  
+  
+  @media (max-width: 768px) {
+    .home-container h1 {
+      font-size: 2.5rem;
+    }
+  
+    .home-container p {
+      font-size: 1.2rem;
+    }
+  
+    .home-container a {
+      font-size: 1rem;
+      padding: 8px 15px;
+    }
+  }
+  
+.avatar {
+    width: 150px;              
+    height: 150px;            
+    border-radius: 50%;        
+    object-fit: cover;      
+    margin-bottom: 20px;        
+  }
